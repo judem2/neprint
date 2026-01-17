@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | NE Print</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">NE<span>Print</span></a>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1>Our Work</h1>
+            <p>Check out some of our recent projects</p>
+        </div>
+    </header>
+
+    <section class="portfolio-section">
+        <div class="container">
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="apparel">Apparel</button>
+                <button class="filter-btn" data-filter="signage">Signage</button>
+                <button class="filter-btn" data-filter="promotional">Promotional</button>
+            </div>
+
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="apparel">
+                    <div class="portfolio-image">
+                        <div class="placeholder-image dark">Custom T-Shirts</div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Brand Launch Collection</h3>
+                        <p>Screen printed t-shirts for a local streetwear brand launch.</p>
+                        <span class="portfolio-tag">Screen Printing</span>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="signage">
+                    <div class="portfolio-image">
+                        <div class="placeholder-image dark">Event Banner</div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Music Festival Signage</h3>
+                        <p>Large format banners and stage backdrops for outdoor festival.</p>
+                        <span class="portfolio-tag">Large Format</span>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="apparel">
+                    <div class="portfolio-image">
+                        <div class="placeholder-image dark">Team Jerseys</div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Sports Team Uniforms</h3>
+                        <p>Custom jerseys with sublimated designs and player numbers.</p>
+                        <span class="portfolio-tag">Sublimation</span>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="promotional">
+                    <div class="portfolio-image">
+                        <div class="placeholder-image dark">Branded Merch</div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Corporate Gift Package</h3>
+                        <p>Branded merchandise including caps, mugs, and notebooks.</p>
+                        <span class="portfolio-tag">Promotional</span>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="apparel">
+                    <div class="portfolio-image">
+                        <div class="placeholder-image dark">Embroidered Polos</div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Restaurant Staff Uniforms</h3>
+                        <p>Embroidered polos and aprons for restaurant chain.</p>
+                        <span class="portfolio-tag">Embroidery</span>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="signage">
+                    <div class="portfolio-image">
+                        <div class="placeholder-image dark">Storefront Sign</div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Retail Store Signage</h3>
+                        <p>Window graphics and interior signage for boutique store.</p>
+                        <span class="portfolio-tag">Large Format</span>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="apparel">
+                    <div class="portfolio-image">
+                        <div class="placeholder-image dark">Hoodie Collection</div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Limited Edition Hoodies</h3>
+                        <p>DTG printed hoodies with complex artwork for indie artist.</p>
+                        <span class="portfolio-tag">DTG Printing</span>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="promotional">
+                    <div class="portfolio-image">
+                        <div class="placeholder-image dark">Sticker Pack</div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Brand Sticker Collection</h3>
+                        <p>Die-cut vinyl stickers for brand promotional campaign.</p>
+                        <span class="portfolio-tag">Stickers</span>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="signage">
+                    <div class="portfolio-image">
+                        <div class="placeholder-image dark">Trade Show</div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Trade Show Booth</h3>
+                        <p>Complete booth graphics including backdrop and table covers.</p>
+                        <span class="portfolio-tag">Large Format</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <h2>Want to See Your Project Here?</h2>
+            <p>Let's create something amazing together.</p>
+            <a href="contact.html" class="btn btn-primary">Start Your Project</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">NE<span>Print</span></a>
+                    <p>Quality printing services for businesses and individuals.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p>Email: info@neprint.com</p>
+                    <p>Follow us on social media</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 NE Print. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
