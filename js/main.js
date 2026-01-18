@@ -55,26 +55,14 @@ document.addEventListener('DOMContentLoaded', function() {
     const contactForm = document.getElementById('contactForm');
     const formSuccess = document.getElementById('formSuccess');
 
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-
-            // Get form data
-            const formData = new FormData(contactForm);
-            const data = Object.fromEntries(formData);
-
-            // Log form data (in production, you'd send this to a server)
-            console.log('Form submitted:', data);
-
-            // Show success message
+    // Check if redirected back after successful submission
+    if (window.location.search.includes('success=true')) {
+        if (contactForm && formSuccess) {
             contactForm.style.display = 'none';
             formSuccess.style.display = 'block';
-
-            // Optional: Reset form after delay
-            setTimeout(() => {
-                contactForm.reset();
-            }, 1000);
-        });
+        }
+        // Clean up URL
+        window.history.replaceState({}, document.title, window.location.pathname);
     }
 
     // Smooth scroll for anchor links
